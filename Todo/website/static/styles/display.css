@@ -1,0 +1,53 @@
+.task-display-class{
+    margin-top:15px;
+    
+    
+}
+
+.task-div-style{
+    display:flex;
+    align-items: center;
+    /* justify-content:flex-start; */
+    transition:transform 0.5s;
+    margin-bottom:8px;
+}
+.checkbox-style{
+    background-color:red;
+    width:20px;
+    height:20px;
+    margin-right:10px;
+    border-width:5px;
+    border-style:solid;
+    transition:transform 1s;
+    accent-color: #a103fc;
+    
+    
+}   
+
+.taskname-style{
+    font-size:20px;
+    margin-right:10px;
+}
+
+.cancel-button-style{
+    height:10px;
+    width:20px;
+    background-color:#e63030;
+    border-radius:3px;
+}
+
+
+.task-div-style:hover{
+    transform:translate3d(2px,-7px,7px);
+    
+}
+
+.check-css{
+    text-decoration: line-through;
+}
+
+.uncheck-css{
+    text-decoration: none;
+}
+
+

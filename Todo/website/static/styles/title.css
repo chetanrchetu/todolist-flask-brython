@@ -1,0 +1,18 @@
+.top-heading{
+    font-size:40px ;
+    display:flex;
+    font-family: Protest Riot;
+    
+    justify-content: center;
+}
+
+.heading{
+    margin-top: 0px;
+    font-weight: 20;
+    
+}
+
+
+.heading:hover{
+    text-decoration: underline;
+}

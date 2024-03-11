@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+
+
+{% block title %}
+Todolist
+{% endblock %}
+
+
+
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static',filename='styles/title.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='styles/input.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='styles/display.css') }}">
+{% endblock %}
+
+{% block src %}
+<script type="text/python" src="{{ url_for('static',filename='scripts/send_task.py') }}"></script>
+{% endblock %}
+
+
+{% block content %}
+
+<div class="top-heading">
+
+    <h1 class="heading">Todo list</h1>
+
+</div>
+
+<div class="Input-class">
+    <label class="label-style">Enter a task:</label>
+    <input class="Input-box-style" type="text" id="Input-box" placeholder="enter task">
+    <button type="submit" id="Submit-button">Add</button>
+    <button type="submit" id="Clear-button">Clear</button>
+</div>
+
+
+<div class="task-display-class" id="task-display-part" >
+    
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static',filename='styles/general.css') }}">
+
+        <script type="text/javascript" src="{{ url_for('static',filename='scripts/brython.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='scripts/brython_stdlib.js') }}"></script>
+
+        {% block css %}{% endblock %}
+        {% block src %}{% endblock %}
+    </head>
+    <body onload="brython()">
+
+        {% block content %}{% endblock %}
+
+
+
+    </body>
+</html>
